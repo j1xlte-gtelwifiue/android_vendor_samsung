@@ -1,4 +1,5 @@
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter j1xlte j2lte on5ltetmo,$(TARGET_DEVICE)),)
+ifneq ($(filter j1xlte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libGLES_mali

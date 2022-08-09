@@ -1,4 +1,5 @@
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +19,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal3475-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal3475-common/proprietary/vendor/bin/gps.cer:$(TARGET_COPY_OUT_VENDOR)/bin/gps.cer \
-    vendor/samsung/universal3475-common/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
     vendor/samsung/universal3475-common/proprietary/lib/hw/gps.universal3475.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gps.universal3475.so \
     vendor/samsung/universal3475-common/proprietary/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptX_encoder.so \
     vendor/samsung/universal3475-common/proprietary/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
@@ -27,8 +26,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal3475-common/proprietary/lib/liboemcrypto.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liboemcrypto.so \
     vendor/samsung/universal3475-common/proprietary/lib/libprotobuf-cpp-fl26.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-fl26.so \
     vendor/samsung/universal3475-common/proprietary/lib/libstagefright_hdcp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_hdcp.so \
-    vendor/samsung/universal3475-common/proprietary/lib/libwrappergps.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwrappergps.so \
     vendor/samsung/universal3475-common/proprietary/lib/libstlport.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstlport.so \
+    vendor/samsung/universal3475-common/proprietary/lib/libwrappergps.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwrappergps.so \
+    vendor/samsung/universal3475-common/proprietary/vendor/bin/gps.cer:$(TARGET_COPY_OUT_VENDOR)/bin/gps.cer \
+    vendor/samsung/universal3475-common/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
     vendor/samsung/universal3475-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/samsung/universal3475-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/universal3475-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
